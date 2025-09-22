@@ -1,0 +1,41 @@
+.bg-clear {
+  background-image: url('/Clear.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-clouds {
+  background-image: url('/cloud.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-rain {
+  background-image: url('/rain.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-thunderstorm {
+  background-image: url('/thunderstorm.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-snow {
+  background-image: url('/snow.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-mist {
+  background-image: url('/foggy.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
