@@ -4,10 +4,15 @@ import mongoose from 'mongoose'
 
 async function mongodb(){
      try {
-        await mongoose.connect('mongodb+srv://dipokdutta876:AIq3kRjCYgtPH2or@myproject.nqrg7.mongodb.net/WeatherDatabase')
+        const mongoUri = process.env.MONGO_URL;
+        console.log(mongoUri)
+        if (!mongoUri) {
+          throw new Error('MONGO_URI is not defined in environment variables');
+        }
+        await mongoose.connect(mongoUri)
         console.log("mongodb is connected")
      } catch (error) {
-        console.log("mongodb is not connected")
+        console.log("mongodb is not connected",error)
      }
 }
 export default mongodb
